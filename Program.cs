@@ -1,24 +1,35 @@
-﻿using LinkedList;
+﻿
 
 internal class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
 
-        LikedList likedList = new LikedList();
-        likedList.Insert(10);
-        likedList.Insert(20);
-        likedList.Insert(30);
-        likedList.Insert(40);
-        likedList.Insert(50);
-        likedList.Insert(70);
-        likedList.Dispaly();
+        LinkedList list = new LinkedList();
 
-        likedList.Delete(20);
-        likedList.Delete(30);
-        likedList.Delete(60);
-        Console.WriteLine("After Deleting");
-        likedList.Dispaly();
-        Console.WriteLine("Hello, World!");
+        list.push_at(40, 1);
+        list.push_at(30, 2);
+        list.push_at(60, 3);
+
+        list.PrintList();
+
+        list.push_at(600, 3);
+        list.PrintList();
+
+        list.push_back(20);
+        list.PrintList();
+        
+
+        //likedList.Insert(70);
+        
+        
+
+
+        //likedList.Delete(20);
+        //likedList.Delete(30);
+        //likedList.Delete(60);
+        //Console.WriteLine("After Deleting");
+        //likedList.Dispaly();
+        //Console.WriteLine("Hello, World!");
     }
 }
