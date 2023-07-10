@@ -71,7 +71,8 @@ namespace LinkedList
                 }
             }
         }
-
+        
+      
         public void Dispaly()
         {
             Node node = head;
